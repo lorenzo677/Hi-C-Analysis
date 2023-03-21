@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: hicanalysis
+Version: 0.1.0
+Summary: A little package for spectral analysis for Hi-C matrices and visualize the results.
+Author: Lorenzo Barsotti
+License-File: LICENSE

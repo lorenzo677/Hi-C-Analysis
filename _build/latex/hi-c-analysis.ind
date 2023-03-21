@@ -1,0 +1,66 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter B
+  \item \spxentry{build\_projectors()}\spxextra{in module hicanalysis.preprocessing}, \hyperpage{3}
+
+  \indexspace
+  \bigletter C
+  \item \spxentry{create\_graph()}\spxextra{in module hicanalysis.preprocessing}, \hyperpage{1}
+
+  \indexspace
+  \bigletter D
+  \item \spxentry{degree\_distribution()}\spxextra{in module hicanalysis.visualizegraph}, 
+		\hyperpage{5}
+
+  \indexspace
+  \bigletter E
+  \item \spxentry{extract\_diagonal\_blocks()}\spxextra{in module hicanalysis.preprocessing}, 
+		\hyperpage{2}
+
+  \indexspace
+  \bigletter G
+  \item \spxentry{get\_chromosome\_list()}\spxextra{in module hicanalysis.preprocessing}, 
+		\hyperpage{2}
+
+  \indexspace
+  \bigletter H
+  \item \spxentry{histogram()}\spxextra{in module hicanalysis.visualizegraph}, \hyperpage{7}
+
+  \indexspace
+  \bigletter O
+  \item \spxentry{ooe\_normalization()}\spxextra{in module hicanalysis.preprocessing}, 
+		\hyperpage{3}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{plot\_chromosome\_hics()}\spxextra{in module hicanalysis.visualizegraph}, 
+		\hyperpage{6}
+  \item \spxentry{plot\_chromosomes\_histograms()}\spxextra{in module hicanalysis.visualizegraph}, 
+		\hyperpage{6}
+  \item \spxentry{plot\_matrix()}\spxextra{in module hicanalysis.visualizegraph}, \hyperpage{6}
+  \item \spxentry{plot\_matrix\_comparison()}\spxextra{in module hicanalysis.visualizegraph}, 
+		\hyperpage{9}
+
+  \indexspace
+  \bigletter R
+  \item \spxentry{reconstruct\_matrix()}\spxextra{in module hicanalysis.preprocessing}, 
+		\hyperpage{3}
+  \item \spxentry{remove\_empty\_axis()}\spxextra{in module hicanalysis.preprocessing}, 
+		\hyperpage{1}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{scatter\_plot()}\spxextra{in module hicanalysis.visualizegraph}, \hyperpage{7}
+  \item \spxentry{show\_10\_projectors()}\spxextra{in module hicanalysis.visualizegraph}, 
+		\hyperpage{8}
+
+  \indexspace
+  \bigletter W
+  \item \spxentry{weights\_distribuion()}\spxextra{in module hicanalysis.visualizegraph}, 
+		\hyperpage{5}
+
+\end{sphinxtheindex}

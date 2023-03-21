@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+hicanalysis/__init__.py
+hicanalysis/preprocessing.py
+hicanalysis/visualizegraph.py
+hicanalysis.egg-info/PKG-INFO
+hicanalysis.egg-info/SOURCES.txt
+hicanalysis.egg-info/dependency_links.txt
+hicanalysis.egg-info/requires.txt
+hicanalysis.egg-info/top_level.txt
