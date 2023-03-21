@@ -48,7 +48,7 @@ This package was built with Python `3.11.2` on `macOS 13.2.1` with `arm64` archi
 
 
 ## Documentation and Tutorial
-The documentation of the modules can be found in the directory `docs` and online at the website [https://github.com/lorenzo677/Hi-C-Analysis/blob/main/_build/html/index.html](https://github.com/lorenzo677/Hi-C-Analysis/blob/main/_build/html/index.html)
+The documentation of the modules can be found in the directory `docs` and online at the website [here](./_build/html/index.html)
 
 In the `docs` directory there is `hi-c-analysis.pdf` that contain the documentation for all the function of the two modules.
 
