@@ -6,7 +6,7 @@ from scipy.stats import pearsonr
 from pathlib import Path
 import hicanalysis.preprocessing as pre
 import hicanalysis.visualizegraph as vg
-
+import matplotlib.pyplot as plt
 #%%
 def main():
     #%%
@@ -121,11 +121,23 @@ def main():
     # eigenvectors = np.array([eigenvectors[i] for i in idx])
     # ranked_eigenvector = eigenvectors[:,1] # select the first eigenvector
     
+    
+    
+    cumulative_distribution = np.cumsum(eigenvalues) / np.sum(eigenvalues)
+
+    # Disegna il grafico della distribuzione cumulativa degli autovalori
+    plt.plot(eigenvalues, cumulative_distribution)
+    plt.xlabel('Autovalori')
+    plt.ylabel('Distribuzione cumulativa')
+    plt.show()
+
+
+
     # PROJECTORS CONSTRUCTION 
     projectors = pre.build_projectors(eigenvectors, 21)
     
     # MATRIX RECONSTRUCTION
-    reconstructed_matrix = pre.reconstruct_matrix(projectors, i)
+    reconstructed_matrix = pre.reconstruct_matrix(projectors, eigenvalues, i)
     # pixels = [(122,122), (122, 123), (123,122)]                       # pixel to be masked
   
     vg.plot_matrix_comparison(reconstructed_matrix, 
