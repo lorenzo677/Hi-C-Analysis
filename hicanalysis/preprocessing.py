@@ -158,7 +158,8 @@ def build_projectors(eigenvectors: np.array,
     
     return projectors
 
-def reconstruct_matrix(projectors: list, 
+def reconstruct_matrix(projectors: list,
+                       eigenvalues: list,
                        number_of_projectors: int
                        ) -> np.ndarray:
     """
@@ -170,23 +171,30 @@ def reconstruct_matrix(projectors: list,
     projectors (list) :
         List containing np.ndarray of the projectors. It is supposed that the projectors are ordered 
         from the most to the least important.
+    eigenvalues (list) :
+        List containing the eigenvalues corresponding to the `projectors`.
     number_of_projectors (int) :
         Number of projectors to be added together.
 
     Returns
     -------
     np.ndarray: 
-        Reconstructed matrix from the addition of the first `number_of_projectors` projectors.
+        Reconstructed matrix from the addition of the first `number_of_projectors` projectors, multiplied by
+        the corresponding eigenvectors.
 
     Raises
     ------
         ValueError: 
             When the `number_of_projectors` parameter is greater than the length of the `projectors` list.
+        ValueError: 
+            When the `number_of_projectors` parameter is greater than the length of the `eigenvalues` list.
     """
     if number_of_projectors > len(projectors):
         raise ValueError('Number of projectors must be smaller than the length of projectors list.')
+    if number_of_projectors > len(eigenvalues):
+        raise ValueError('Number of projectors must be smaller than the number of eigenvalues in the list.')
     reconstructed_matrix = np.zeros(shape=projectors[0].shape)
     for i in range(number_of_projectors):
-        reconstructed_matrix += projectors[i]
+        reconstructed_matrix += projectors[i] * eigenvalues[i]
     return reconstructed_matrix
 # %%
